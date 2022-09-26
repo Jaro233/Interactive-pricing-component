@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+    /* font-weight: 800; */
+}
+
+body p {
+    color: hsl(225, 20%, 60%);
+    font-size: 12px;
+}
+
+body h1 {
+    color: hsl(227, 35%, 25%);
+}
+
+footer {
+    display: none;
+}
+
+.halfBackground {
+    border-bottom-left-radius: 170px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 57%;
+    background-color: hsl(230, 100%, 98%);
+}
+
+.main-container {
+    max-width: 560px;
+    width: 100%;
+    z-index: 1;
+    margin: 20px;
+}
+
+.title-div {
+    position: relative;
+    text-align: center;
+    margin: 40px auto 100px auto;
+}
+
+.title-div img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-54%, -50%);
+}
+
+.title-div h4 {
+    margin-top: 10px;
+    color: hsl(225, 20%, 60%);
+}
+
+.card-div {
+    -webkit-box-shadow: 8px 13px 19px 0px rgba(238, 238, 238, 1);
+    -moz-box-shadow: 8px 13px 19px 0px rgba(238, 238, 238, 1);
+    box-shadow: 8px 13px 19px 0px rgba(238, 238, 238, 1);
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 20px;
+}
+.top-card {
+    padding: 40px 40px 30px 40px;
+}
+
+.page-views-and-monthly-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slider-and-price p {
+    font-size: 16px;
+}
+
+.slidecontainer {
+    width: 100%;
+    margin: 27px auto;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 22px;
+    width: 22px;
+    background-image: url('./images/icon-slider.svg');
+    background-size: 63%;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-color: hsl(174, 86%, 45%);
+    -webkit-box-shadow: -1px 9px 55px 1px rgba(11, 218, 218, 1);
+    -moz-box-shadow: -1px 9px 55px 1px rgba(11, 218, 218, 1);
+    box-shadow: -1px 9px 55px 1px rgba(11, 218, 218, 1);
+    padding: 21px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+  
+input[type="range"] {
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 100%;
+    height: 7px;
+    background: #eee;
+    border-radius: 5px;
+    background-image: linear-gradient(hsl(174, 77%, 80%), hsl(174, 77%, 80%));
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+}
+ 
+ 
+  /* Input Track */
+input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+  
+.billings-and-discount-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 35px 15px 10px 0;
+}
+
+.billings {
+    padding-left: 10px;
+}
+
+.discount {
+    color: hsl(15, 100%, 70%);
+    background-color: hsl(14, 92%, 95%);
+    border-radius: 20px;
+    font-size: 10px;
+    padding: 5px;
+    margin-left: 10px;
+    height: 100%;
+    font-weight: 800;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 22px;
+    margin-left: 10px;
+}
+  
+  /* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* The slider */
+.slider-checkbox {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider-checkbox:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.switch :checked + .slider-checkbox {
+    background-color: hsl(174, 77%, 80%);
+}
+  
+.switch :focus + .slider-checkbox {
+    box-shadow: 0 0 1px hsl(174, 77%, 80%);
+}
+  
+.switch :checked + .slider-checkbox:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+  
+  /* Rounded sliders */
+.slider-checkbox.round {
+    border-radius: 34px;
+}
+  
+.slider-checkbox.round:before {
+    border-radius: 50%;
+}
+
+.slider-checkbox:hover {
+    background-color: hsl(174, 77%, 80%);
+}
+
+.trial-div {
+    padding: 30px 40px 30px 40px;
+    border-top: 1px solid #eee;
+    border-width: thin;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.one-check {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.one-check img {
+    width: 100%;
+    width: 10px;
+    height: 10px;
+    margin-right: 15px;
+    margin-top: 4px;
+}
+
+.trial {
+    background-color: hsl(227, 35%, 25%);
+    border: none;
+    border-radius: 30px;
+    margin: 20px 0 20px 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: hsl(226, 100%, 87%);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.hidden-desktop {
+    display: none;
+}
+
+.hidden-mobile {
+    display: flex;
+    align-items: center;
+}
+
+.hidden-mobile p {
+    margin-left: 5px;
+}
+
+.hidden-desktop p {
+    margin-left: 5px;
+}
+
+.hidden-desktop-discount {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .title-div {
+        margin-top: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .title-div h1 {
+        font-size: 27px;
+    }
+
+    .page-views-and-monthly-price {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .hidden-desktop {
+        display: flex;;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hidden-mobile {
+        display: none;
+    }
+
+    .hidden-mobile-discount {
+        display: none;
+    }
+
+    .hidden-desktop-discount {
+        display: block;
+    }
+
+    .trial-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .trial {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .billings-and-discount-div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 35px 5px 10px 0;
+        text-align: center;
+    }
+    
+}
+
+
+@media screen and (max-width: 350px) {
+    .main-container {
+        padding: 10px;
+    }
+
+    .top-card {
+        padding: 10px;
+        padding-top: 20px;
+    }
+
+    .trial-div {
+        padding: 10px;
+    }
+
+    .switch :checked + .slider-checkbox:before {
+        -webkit-transform: translateX(7px);
+        -ms-transform: translateX(7px);
+        transform: translateX(7px);
+    }
+}

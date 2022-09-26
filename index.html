@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="halfBackground">
+</div>
+<main class="main-container">
+  <div class="title-div">
+    <h1 class="title">Simple, traffic-based pricing</h1>
+    <img src="./images/pattern-circles.svg" alt="circles">
+    <h4 class="sign-up">Sign-up for our 30-day trial. No credit card required.</h2>
+  </div>
+  <div class="card-div">
+    <div class="top-card">
+      <div class="slider-and-price">
+        <span class="page-views-and-monthly-price">
+          <p class="page-views" id="pageviews">0 PAGEVIEWS</p>
+          <span class="monthly-cost hidden-mobile">
+          <h1 class="monthly-price">$0</h1>
+          <p class="month">/ month</p>
+        </span>
+        </span>
+        <div class="slidecontainer">
+          <input type="range" min="20" max="100" step="20" value="20" class="slider" id="myRange" >
+        </div>
+        <span class="monthly-cost hidden-desktop">
+          <h1 class="monthly-price">$ </h1>
+          <p class="month">/ month</p>
+        </span>
+      </div>
+        
+      <div class="billings-and-discount-div">
+        <p class="monthly-billing billings">Monthly Billing</p>
+        <label class="switch billings">
+          <input type="checkbox" class="toggle-btn" value="OFF" onclick="toggle(this)">
+          <span class="slider-checkbox round"></span>
+        </label>
+        <p class="yearly-billing billings">Yearly Billing</p>
+        <p class="discount billings hidden-mobile-discount">25% discount</p>
+        <p class="discount billings hidden-desktop-discount">-25%</p>
+      </div>
+    </div>
+      
+    <div class="trial-div">
+      <span class="checks">
+        <span class="one-check">
+          <img src="./images/icon-check.svg" alt="check">
+          <p class="check">Unlimited websites</p>
+        </span>
+        <span class="one-check">
+          <img src="./images/icon-check.svg" alt="check">
+          <p class="check">100% data ownership</p>
+        </span>
+        <span class="one-check">
+          <img src="./images/icon-check.svg" alt="check">
+          <p class="check">Email reports</p>
+        </span>
+      </span>
+      <button class="trial">Start my trial</button>
+    </div>
+  </div>
+</main>
+  
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
