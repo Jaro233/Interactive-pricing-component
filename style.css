@@ -113,6 +113,70 @@ footer {
     cursor: pointer;
 }
 
+.slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 0.3125rem;
+    width: 0.3125rem;
+    background-image: url('./images/icon-slider.svg');
+    background-size: 63%;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-color: hsl(174, 86%, 45%);
+    -webkit-box-shadow: -0.0625rem 0.5625rem 3.4375rem 0.0625rem rgba(11, 218, 218, 1);
+    -moz-box-shadow: -0.0625rem 0.5625rem 3.4375rem 0.0625rem rgba(11, 218, 218, 1);
+    box-shadow: -0.0625rem 0.5625rem 3.4375rem 0.0625rem rgba(11, 218, 218, 1);
+    padding: 1.3125rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.slider::-ms-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 0.3125rem;
+    width: 0.3125rem;
+    background-image: url('./images/icon-slider.svg');
+    background-size: 63%;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    background-color: hsl(174, 86%, 45%);
+    -webkit-box-shadow: -0.0625rem 0.5625rem 3.4375rem 0.0625rem rgba(11, 218, 218, 1);
+    -moz-box-shadow: -0.0625rem 0.5625rem 3.4375rem 0.0625rem rgba(11, 218, 218, 1);
+    box-shadow: -0.0625rem 0.5625rem 3.4375rem 0.0625rem rgba(11, 218, 218, 1);
+    padding: 1.3125rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+    background-color: hsl(174, 86%, 30%);
+}
+
+input[type="range"]::-moz-range-thumb:active {
+    opacity: 0.7;
+}
+  
+input[type="range"]::-ms-thumb:hover {
+    background-color: hsl(174, 86%, 30%);
+}
+
+input[type="range"]::-ms-thumb:active {
+    opacity: 0.7;
+  }
+
+.slider::-webkit-slider-thumb:active {
+    background-color: hsl(174, 86%, 30%);
+}
+
+.slider::-webkit-slider-thumb:hover {
+    opacity: 0.7;
+}
+
   
 input[type="range"] {
     -webkit-appearance: none;
@@ -122,7 +186,7 @@ input[type="range"] {
     background: #eee;
     border-radius: 0.3125rem;
     background-image: linear-gradient(hsl(174, 77%, 80%), hsl(174, 77%, 80%));
-    background-size: 0% 100%;
+    background-size: 50% 100%;
     background-repeat: no-repeat;
 }
  
