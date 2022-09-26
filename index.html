@@ -34,6 +34,7 @@
         </span>
         </span>
         <div class="slidecontainer">
+          <label for="myRange"></label>
           <input type="range" min="20" max="100" step="20" value="20" class="slider" id="myRange" >
         </div>
         <span class="monthly-cost hidden-desktop">
@@ -45,7 +46,8 @@
       <div class="billings-and-discount-div">
         <p class="monthly-billing billings">Monthly Billing</p>
         <label class="switch billings">
-          <input type="checkbox" class="toggle-btn" value="OFF" onclick="toggle(this)">
+          <label for="toggle"></label>
+          <input type="checkbox" id="toggle" class="toggle-btn" value="OFF" onclick="toggle(this)">
           <span class="slider-checkbox round"></span>
         </label>
         <p class="yearly-billing billings">Yearly Billing</p>
