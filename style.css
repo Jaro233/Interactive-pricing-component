@@ -61,9 +61,10 @@ footer {
     transform: translate(-54%, -50%);
 }
 
-.title-div h4 {
+.title-div p {
     margin-top: 10px;
     color: hsl(225, 20%, 60%);
+    font-size: 15px;
 }
 
 .card-div {
