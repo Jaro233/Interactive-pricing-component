@@ -117,18 +117,18 @@ footer {
 
 .slider::-ms-track {
     width: 100%;
-    height: 8px;
+    height: 0.5rem;
   
-    border-radius: 9px;
+    border-radius: 0.5625rem;
   
     cursor: pointer;
 }
 
 .slider::-moz-range-track {
     width: 100%;
-    height: 8px;
+    height: 0.5rem;
   
-    border-radius: 9px;
+    border-radius: 0.5625rem;
   
     cursor: pointer;
 }
